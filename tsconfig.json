@@ -1,0 +1,15 @@
+{
+  "include": ["./**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "es5",
+      "esnext",
+      "es2015.collection"
+    ]
+  }
+}

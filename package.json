@@ -1,0 +1,24 @@
+{
+  "name": "dotai",
+  "version": "1.0.0",
+  "description": "Atomic state manager",
+  "type": "module",
+  "sideEffects": "false",
+  "main": "lib/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "rollup": "^3.26.3",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.1.6"
+  }
+}
