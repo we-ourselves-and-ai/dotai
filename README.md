@@ -1,0 +1,2 @@
+# dotai
+Atomic state manager 
