@@ -33,9 +33,8 @@ const value = atom(100000);
 ```ts
 // Counter.tsx
 import { state } from './store.ts'
-import { view } from "nandax";
 
-export const Counter = view(() => {
+export const Counter = () => {
     const [atomValue, setAtomValue] = useAtom(value);
     const newValue = useAtomValue(value);
     
@@ -52,7 +51,7 @@ export const Counter = view(() => {
             count is {atomValue}
         </button>
     )
-});
+};
 ```
 
 ## API
