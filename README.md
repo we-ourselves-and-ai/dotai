@@ -38,10 +38,6 @@ export const Counter = () => {
     const [atomValue, setAtomValue] = useAtom(value);
     const newValue = useAtomValue(value);
     
-    const handleIncrement = () => {
-        state.count = state.count + 1;
-    }
-    
     return (
         <button onClick={() => {
             const countValue = newValue + 150;
