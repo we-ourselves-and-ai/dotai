@@ -25,14 +25,14 @@ yarn add @dacorm/dotai
 
 ```ts
 // store.ts
-import { atom, useAtom, useAtomValue } from "./dotai";
+import { atom, useAtom, useAtomValue } from "./jotai";
 
 const value = atom(100000);
 ```
 
 ```ts
 // Counter.tsx
-import { value } from './store.ts'
+import { state } from './store.ts'
 
 export const Counter = () => {
     const [atomValue, setAtomValue] = useAtom(value);
