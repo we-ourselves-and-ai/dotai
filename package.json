@@ -1,11 +1,12 @@
 {
   "name": "@dacorm/dotai",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "private": false,
   "description": "Atomic state manager",
   "type": "module",
   "sideEffects": "false",
-  "main": "lib/index.es.js",
+  "main": "dist/index.es.js",
+  "types": "dist/src/solution.d.ts",
   "files": ["dist"],
   "scripts": {
     "build": "rollup -c",

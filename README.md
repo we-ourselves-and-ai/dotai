@@ -25,23 +25,18 @@ yarn add @dacorm/dotai
 
 ```ts
 // store.ts
-import { atom, useAtom, useAtomValue } from "./jotai";
+import { atom, useAtom, useAtomValue } from "./dotai";
 
 const value = atom(100000);
 ```
 
 ```ts
 // Counter.tsx
-import { state } from './store.ts'
-import { view } from "nandax";
+import { value } from './store.ts'
 
-export const Counter = view(() => {
+export const Counter = () => {
     const [atomValue, setAtomValue] = useAtom(value);
     const newValue = useAtomValue(value);
-    
-    const handleIncrement = () => {
-        state.count = state.count + 1;
-    }
     
     return (
         <button onClick={() => {
@@ -52,7 +47,7 @@ export const Counter = view(() => {
             count is {atomValue}
         </button>
     )
-});
+};
 ```
 
 ## API
