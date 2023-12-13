@@ -25,7 +25,7 @@ yarn add @dacorm/dotai
 
 ```ts
 // store.ts
-import { atom, useAtom, useAtomValue } from "./jotai";
+import { atom, useAtom, useAtomValue } from "./dotai";
 
 const value = atom(100000);
 ```
